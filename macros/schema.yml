@@ -1,0 +1,10 @@
+version: 2
+
+macros:
+  - name: safe_divide
+    description: Divides two numbers. Returns null when the denominator is zero.
+    arguments:
+      - name: numerator
+        type: numeric
+      - name: denominator
+        type: numeric
