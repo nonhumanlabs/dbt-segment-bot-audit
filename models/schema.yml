@@ -1,0 +1,56 @@
+version: 2
+
+models:
+  - name: segment_bot_audit__visitors
+    description: >
+      One row for each visitor (MTU) in each month of the audit window, with each
+      signal and the verdict. Strong signals are enough alone. The two weak signals
+      (datacenter IP and IP/user-agent burst) count only together. Visitors with a
+      user_id are never counted as non-human.
+    columns:
+      - name: activity_month
+        data_tests: [not_null]
+      - name: visitor_key
+        description: The anonymous_id, or the user_id when there is no anonymous_id.
+        data_tests: [not_null]
+      - name: is_identified
+        description: 1 when the visitor has a user_id in the month.
+      - name: has_ip
+        description: 1 when at least one event has a usable IP address. The IP signals need this.
+      - name: signal_bot_user_agent
+        description: Strong. The user agent is a known bot, crawler, monitor or headless browser.
+      - name: signal_malformed_user_agent
+        description: Strong. A page call has a user agent that is too short or does not start with Mozilla/.
+      - name: signal_scanner_path
+        description: Strong. A page call is on a path that vulnerability scanners use, such as /wp-login.php or /.env.
+      - name: signal_fast_pages
+        description: Strong. Many page calls come less than one second apart.
+      - name: signal_regular_interval
+        description: Strong. Page calls come at an almost fixed interval.
+      - name: signal_datacenter_ip
+        description: Weak. The IP address is in a cloud provider range (AWS, GCP, DigitalOcean, Oracle or Linode).
+      - name: signal_ip_ua_burst
+        description: Weak. Many visitor IDs share the IP address and user agent in the same hour.
+      - name: is_non_human
+        description: 1 when the visitor looks non-human.
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: [0, 1]
+      - name: primary_reason
+        description: The first signal that made the visitor non-human.
+
+  - name: segment_bot_audit__monthly
+    description: The MTUs, the non-human MTUs and the estimated cost for each month.
+    columns:
+      - name: activity_month
+        data_tests: [not_null, unique]
+
+  - name: segment_bot_audit__summary
+    description: One row with the totals for the full audit window.
+
+seeds:
+  - name: segment_bot_audit_datacenter_ranges
+    description: >
+      The IPv4 ranges of large cloud providers, split at first-octet boundaries.
+      Regenerate it with scripts/update_datacenter_ranges.py.

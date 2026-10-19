@@ -20,4 +20,6 @@ jobs:
           python-version: "3.12"
       - run: pip install dbt-core dbt-duckdb
       - run: dbt deps
+      - run: dbt seed
       - run: dbt build
+      - run: dbt run-operation segment_bot_audit.print_report

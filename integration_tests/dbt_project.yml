@@ -1,8 +1,30 @@
-name: nonhumanlabs_integration_tests
+name: segment_bot_audit_integration_tests
 version: 0.1.0
 config-version: 2
 profile: integration_tests
 
 model-paths: ["models"]
 seed-paths: ["seeds"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
 clean-targets: ["target", "dbt_packages"]
+
+vars:
+  segment_bot_audit_sources: ["segment_web"]
+  segment_bot_audit_end_date: "2026-10-01"
+  segment_bot_audit_price_per_1000_mtus: 10
+
+seeds:
+  segment_bot_audit_integration_tests:
+    # The fixture has a pages table and a tracks table, but no identifies table,
+    # to test a setup that never calls identify.
+    segment_pages:
+      +schema: segment_web
+      +alias: pages
+      +column_types: {id: varchar, anonymous_id: varchar, user_id: varchar, timestamp: timestamp, context_ip: varchar, context_user_agent: varchar, path: varchar}
+    segment_tracks:
+      +schema: segment_web
+      +alias: tracks
+      +column_types: {id: varchar, anonymous_id: varchar, user_id: varchar, timestamp: timestamp, context_ip: varchar, context_user_agent: varchar, event: varchar}
+    expected_visitors:
+      +column_types: {visitor_key: varchar, expected_non_human: integer, expected_reason: varchar}

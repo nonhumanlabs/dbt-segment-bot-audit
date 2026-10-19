@@ -1,0 +1,2 @@
+id,anonymous_id,user_id,timestamp,context_ip,context_user_agent,event
+t8,human_identified_bot_ua,u1,2026-09-15 10:00:00.000,81.2.69.160,Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html),Clicked

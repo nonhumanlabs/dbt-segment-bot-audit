@@ -3,5 +3,5 @@ integration_tests:
   outputs:
     duckdb:
       type: duckdb
-      path: ":memory:"
+      path: integration_tests.duckdb
       threads: 4

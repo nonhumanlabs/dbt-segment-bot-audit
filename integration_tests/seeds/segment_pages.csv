@@ -1,0 +1,57 @@
+id,anonymous_id,user_id,timestamp,context_ip,context_user_agent,path
+p1,human_browse,,2026-09-15 10:00:00.000,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/p0
+p2,human_browse,,2026-09-15 10:02:00.000,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/p1
+p3,human_browse,,2026-09-15 10:04:00.000,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/p2
+p4,human_single,,2026-09-15 10:00:00.000,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p5,human_cubot,,2026-09-15 10:00:00.000,81.2.69.160,"Mozilla/5.0 (Linux; Android 12; CUBOT P80) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",/
+p6,human_no_ip,,2026-09-15 10:00:00.000,,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p7,human_identified_bot_ua,,2026-09-15 10:00:00.000,81.2.69.160,Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html),/
+p9,human_datacenter_only,,2026-09-15 13:00:00.000,1.178.1.5,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p10,office_0,,2026-09-15 10:00:00.000,81.2.69.200,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p11,office_1,,2026-09-15 10:01:00.000,81.2.69.200,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p12,office_2,,2026-09-15 10:02:00.000,81.2.69.200,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p13,office_3,,2026-09-15 10:03:00.000,81.2.69.200,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p14,office_4,,2026-09-15 10:04:00.000,81.2.69.200,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p15,office_5,,2026-09-15 10:05:00.000,81.2.69.200,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p16,office_6,,2026-09-15 10:06:00.000,81.2.69.200,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p17,office_7,,2026-09-15 10:07:00.000,81.2.69.200,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p18,office_8,,2026-09-15 10:08:00.000,81.2.69.200,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p19,office_9,,2026-09-15 10:09:00.000,81.2.69.200,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p20,office_10,,2026-09-15 10:10:00.000,81.2.69.200,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p21,office_11,,2026-09-15 10:11:00.000,81.2.69.200,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p22,old_visitor,,2025-08-01 09:00:00.000,81.2.69.160,Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html),/
+p23,bot_googlebot,,2026-09-15 10:00:00.000,81.2.69.160,Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html),/
+p24,bot_headless,,2026-09-15 10:00:00.000,81.2.69.160,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/120.0.0.0 Safari/537.36",/
+p25,bot_short_ua,,2026-09-15 10:00:00.000,81.2.69.160,Mozilla/4.0,/
+p26,bot_scanner,,2026-09-15 10:00:00.000,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/wp-login.php
+p27,bot_fast,,2026-09-15 10:00:00.000,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/f0
+p28,bot_fast,,2026-09-15 10:00:00.200,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/f1
+p29,bot_fast,,2026-09-15 10:00:00.400,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/f2
+p30,bot_fast,,2026-09-15 10:00:00.600,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/f3
+p31,bot_fast,,2026-09-15 10:00:00.800,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/f4
+p32,bot_fast,,2026-09-15 10:00:01.000,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/f5
+p33,bot_fast,,2026-09-15 10:00:01.200,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/f6
+p34,bot_regular,,2026-09-15 10:00:00.000,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/r0
+p35,bot_regular,,2026-09-15 10:00:30.000,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/r1
+p36,bot_regular,,2026-09-15 10:01:00.000,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/r2
+p37,bot_regular,,2026-09-15 10:01:30.000,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/r3
+p38,bot_regular,,2026-09-15 10:02:00.000,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/r4
+p39,bot_regular,,2026-09-15 10:02:30.000,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/r5
+p40,bot_regular,,2026-09-15 10:03:00.000,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/r6
+p41,bot_regular,,2026-09-15 10:03:30.000,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/r7
+p42,bot_regular,,2026-09-15 10:04:00.000,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/r8
+p43,bot_regular,,2026-09-15 10:04:30.000,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/r9
+p44,bot_regular,,2026-09-15 10:05:00.000,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/r10
+p45,bot_regular,,2026-09-15 10:05:30.000,81.2.69.160,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/r11
+p46,bot_burst_0,,2026-09-15 10:00:00.000,1.178.1.5,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p47,bot_burst_1,,2026-09-15 10:03:00.000,1.178.1.5,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p48,bot_burst_2,,2026-09-15 10:06:00.000,1.178.1.5,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p49,bot_burst_3,,2026-09-15 10:09:00.000,1.178.1.5,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p50,bot_burst_4,,2026-09-15 10:12:00.000,1.178.1.5,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p51,bot_burst_5,,2026-09-15 10:15:00.000,1.178.1.5,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p52,bot_burst_6,,2026-09-15 10:18:00.000,1.178.1.5,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p53,bot_burst_7,,2026-09-15 10:21:00.000,1.178.1.5,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p54,bot_burst_8,,2026-09-15 10:24:00.000,1.178.1.5,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p55,bot_burst_9,,2026-09-15 10:27:00.000,1.178.1.5,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p56,bot_burst_10,,2026-09-15 10:30:00.000,1.178.1.5,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/
+p57,bot_burst_11,,2026-09-15 10:33:00.000,1.178.1.5,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",/

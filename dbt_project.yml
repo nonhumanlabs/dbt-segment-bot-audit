@@ -1,7 +1,43 @@
-name: nonhumanlabs
+name: segment_bot_audit
 version: 0.1.0
 config-version: 2
 require-dbt-version: [">=1.7.0", "<3.0.0"]
 
+model-paths: ["models"]
 macro-paths: ["macros"]
+seed-paths: ["seeds"]
 clean-targets: ["target", "dbt_packages"]
+
+models:
+  segment_bot_audit:
+    +materialized: table
+    intermediate:
+      int_sba__events:
+        +materialized: view
+
+seeds:
+  segment_bot_audit:
+    segment_bot_audit_datacenter_ranges:
+      +column_types:
+        provider: "{{ 'string' if target.type == 'bigquery' else 'varchar(32)' }}"
+        first_octet: "{{ 'int64' if target.type == 'bigquery' else 'integer' }}"
+        start_int: "{{ 'int64' if target.type == 'bigquery' else 'bigint' }}"
+        end_int: "{{ 'int64' if target.type == 'bigquery' else 'bigint' }}"
+
+vars:
+  # The Segment schemas to audit. Each item is a schema name, or a mapping
+  # with `schema` and an optional `database`.
+  segment_bot_audit_sources: []
+  # How many months back from the end date to audit.
+  segment_bot_audit_lookback_months: 12
+  # A fixed end date ('YYYY-MM-DD'). When it is null, the audit ends now.
+  segment_bot_audit_end_date: null
+  # Your overage price in USD for each 1,000 MTUs.
+  segment_bot_audit_price_per_1000_mtus: 10
+  # Signal thresholds.
+  segment_bot_audit_min_ua_length: 30
+  segment_bot_audit_fast_gap_ms: 1000
+  segment_bot_audit_min_fast_gaps: 5
+  segment_bot_audit_min_regular_gaps: 10
+  segment_bot_audit_max_regular_cv: 0.05
+  segment_bot_audit_burst_min_ids: 10
