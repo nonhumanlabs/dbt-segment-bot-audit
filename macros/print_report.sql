@@ -24,4 +24,5 @@
     {% endfor %}
     {{ log("", info=True) }}
     {{ log("Details: the segment_bot_audit__visitors model shows the signals for each MTU.", info=True) }}
+    {{ log("Free review of these results: paste this output at https://nonhumanlabs.dev/#review", info=True) }}
 {% endmacro %}

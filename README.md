@@ -65,6 +65,8 @@ dbt build --select package:segment_bot_audit
 dbt run-operation segment_bot_audit.print_report
 ```
 
+For a free review of your results, paste the output at [nonhumanlabs.dev/#review](https://nonhumanlabs.dev/#review).
+
 The models are:
 
 - `segment_bot_audit__summary`: one row with the totals.
